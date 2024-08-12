@@ -1,4 +1,4 @@
-const Product= require("../models/productModel")
+const Product= require("../models/ProductModel")
 const { v4: uuidv4 } = require('uuid');
 
 exports.getProducts = async(req,res)=>{
