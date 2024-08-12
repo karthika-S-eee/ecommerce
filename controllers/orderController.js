@@ -1,7 +1,6 @@
 const order=require("../models/OrderModel")
 const cart=require("../models/cartModel");
-const productModel = require("../models/productModel");
-const ProductModel=require("../models/productModel")
+const ProductModel=require("../models/ProductModel")
 const { v4: uuidv4 } = require('uuid');
 
 const manageOrder=async(req,res)=>{

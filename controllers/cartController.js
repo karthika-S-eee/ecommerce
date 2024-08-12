@@ -2,7 +2,7 @@
 
 
 const Cart= require("../models/cartModel");
-const Product =require('../models/productModel')
+const Product =require('../models/ProductModel')
 const createCart=async(req,res)=>{
     const {user_id}=req.user;
     const {product_id,quantity}=req.body
