@@ -6,6 +6,7 @@ const productRoutes=require("./routes/productRoute")
 const userRoutes = require("./routes/userRoute")
 const cartRoutes=require("./routes/cartRoute")
 const orderRoutes=require("./routes/orderRoute")
+app.use(cors());
 
 app.use(express.json());
 const mongoose=require('mongoose');
@@ -21,7 +22,7 @@ app.use("/user",userRoutes);
 app.use("/cart",cartRoutes);
 app.use("/order",orderRoutes);
 //connection for front end
-app.use(cors());
+
 
 
 //ports
